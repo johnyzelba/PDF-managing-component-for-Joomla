@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+				addrulepath="/administrator/components/com_helloworld/models/rules"
+>
+	<fieldset
+				name="details"
+				label="COM_HELLOWORLD_HELLOWORLD_DETAILS"
+	>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="filestatus"
+				type="list"
+				default="0"
+				required="true"
+				label="נא לבחור סטטוס"
+				description="">
+			<option value="התקבל">התקבל</option>
+			<option value="טופל">טופל</option>
+			<option value="נשלח">נשלח</option>
+		</field>
+	</fieldset>
+	<fields name="imageinfo">
+		<fieldset
+			name="image-info"
+			label="COM_HELLOWORLD_IMAGE_FIELDS"
+		>
+			<field
+				name="image"
+				type="media"
+				preview="tooltip"
+				label="COM_HELLOWORLD_HELLOWORLD_FIELD_IMAGE_LABEL"
+				description="COM_HELLOWORLD_HELLOWORLD_FIELD_IMAGE_DESC" />
+			<field name="alt"
+				type="text"
+				label="COM_HELLOWORLD_HELLOWORLD_FIELD_ALT_LABEL"
+				description="COM_HELLOWORLD_HELLOWORLD_FIELD_ALT_DESC"
+				size="30"/>
+			<field name="caption"
+				type="text"
+				label="COM_HELLOWORLD_HELLOWORLD_FIELD_CAPTION_LABEL"
+				description="COM_HELLOWORLD_HELLOWORLD_FIELD_CAPTION_DESC"
+				size="30"/>
+		</fieldset>
+	</fields>
+
+<!--	<fieldset
+			name="accesscontrol"
+			label="COM_HELLOWORLD_FIELDSET_RULES"
+	>
+    	<field
+				name="asset_id"
+				type="hidden"
+				filter="unset"
+				/>
+    	<field
+				name="rules"
+				type="rules"
+				label="COM_HELLOWORLD_FIELD_RULES_LABEL"
+				filter="rules"
+				validate="rules"
+				class="inputbox"
+				component="com_helloworld"
+				section="message"
+				/>
+    </fieldset> -->
+</form>

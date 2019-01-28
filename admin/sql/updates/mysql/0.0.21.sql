@@ -1,0 +1,1 @@
+ALTER TABLE `#__helloworld` ADD `filestatus` char(10) NOT NULL DEFAULT 'התקבל';
